@@ -4,6 +4,7 @@
 // Note that the target sum has to be obtained by summing two different integers in the array; you can't add a single integer to itself in order to obtain the target sum.
 // You can assume that there will be at most one pair of numbers summing up to the target sum. 
 
+//Solution 1:
 
 // function twoNumberSum (array, targetSum) {
 //     for ( let i = 0; i < array.length; i++) {
@@ -17,6 +18,21 @@
 //     }
 //     return []
 // }
+
+//Solution 2:
+
+// function twoNumberSum (array, targetSum) {
+//     for (let i = 0; i < array.length; i ++) {
+//         for (let j = i + 1; j < array.length; j ++) {
+//             if (array[i] + array[j] === targetSum) {
+//                 return[array[i], array[j]];
+//             }
+//         }
+//     }
+//     return [];
+// }
+
+//Solution 3:
 
 function twoNumberSum(array, targetSum) {
   //keep track of the number we've seen while iterating over the array
