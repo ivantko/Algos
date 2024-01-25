@@ -1,3 +1,3 @@
 # Algos
 
-Practicing solving algorithm problems on AlgoExpert
+Daily practice solving algorithm problems. 
