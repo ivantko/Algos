@@ -52,6 +52,14 @@ function twoNumberSum(array, targetSum) {
     return [];
 }
 
+
+
+
+
+
+
+
+
   
   // Test cases
   console.log(twoNumberSum([3, 5, -4, 8, 11, 1, -1, 6], 10)); // Example output: [11, -1]

@@ -8,17 +8,25 @@
 //     return seqIdx === sequence.length;
 // }
 
-    function isValidSubsequence (array, sequence) {
-        let mainPointer = 0;
-        let seqPointer = 0;
-        while (mainPointer < array.length) {
-           if (array[mainPointer] === sequence[seqPointer]) {
-            seqPointer++;
-           }
-           mainPointer++;
+function isValidSubsequence (array, sequence) {
+    let mainPointer = 0;
+    let seqPointer = 0;
+    while (mainPointer < array.length) {
+        if (array[mainPointer] === sequence[seqPointer]) {
+        seqPointer++;
         }
-        return seqPointer === sequence.length;
+        mainPointer++;
     }
+    return seqPointer === sequence.length;
+}
+
+
+
+
+
+
+
+
 
     console.log(isValidSubsequence([5, 1, 22, 25, 6, -1, 8, 10], [1, 6, -1, 10])); // Should return true
 
