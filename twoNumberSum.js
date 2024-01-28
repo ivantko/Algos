@@ -34,26 +34,43 @@
 
 //Solution 3:
 
-function twoNumberSum(array, targetSum) {
-  //keep track of the number we've seen while iterating over the array
-  //we use a Set so we can check if a given has been seen in O(1)
-  const seen = new Set();
+// function twoNumberSum(array, targetSum) {
+//   //keep track of the number we've seen while iterating over the array
+//   //we use a Set so we can check if a given has been seen in O(1)
+//   const seen = new Set();
 
-  for (let num of array) {
-    // complement is the number that will sum up to target when added to the current number we are considering
-    const complement = targetSum - num;
-    // if we've seen the complement before then we have a pair of number summing up to target
-    if (seen.has(complement)) {
-      return [num, complement];
-    }
-    // Mark the number as seen
-    seen.add(num);
-  }
-    return [];
-}
+//   for (let num of array) {
+//     // complement is the number that will sum up to target when added to the current number we are considering
+//     const complement = targetSum - num;
+//     // if we've seen the complement before then we have a pair of number summing up to target
+//     if (seen.has(complement)) {
+//       return [num, complement];
+//     }
+//     // Mark the number as seen
+//     seen.add(num);
+//   }
+//     return [];
+// }
 
   
-  // Test cases
+
+
+// function twoNumberSum (array, targetSum) {
+//   for (let i = 0; i < array.length; i++) {
+//     for (let j = i +1 ; j < array.length; j++) {
+//       if (array[i] + array[j] === targetSum) {
+//         return [array[i], array [j]];
+//       }
+//     }
+//   }
+//   return[];
+// }
+
+
+
+
+
+// Test cases
   console.log(twoNumberSum([3, 5, -4, 8, 11, 1, -1, 6], 10)); // Example output: [11, -1]
   console.log(twoNumberSum([4, 6], 10)); // Example output: [4, 6]
   console.log(twoNumberSum([4, 6, 1], 5)); // Example output: [4, 1]
