@@ -74,22 +74,31 @@
 //   return[];
 // }
 
-function twoNumberSum (array, targetSum) {
-  for (let i = 0; i < array.length; i++) {
-    for (let j = i + 1; j < array.length; j++) {
-      if (array[i] + array[j] === targetSum) {
-        return [array[i], array [j]];
-      }
-    }
+// function twoNumberSum (array, targetSum) {
+//   for (let i = 0; i < array.length; i++) {
+//     for (let j = i + 1; j < array.length; j++) {
+//       if (array[i] + array[j] === targetSum) {
+//         return [array[i], array [j]];
+//       }
+//     }
+//   }
+//   return[];
+// }
+
+
+//Solution #3 with hash tables
+function twoNumberSum(array, targetSum) {
+  const nums = {};
+  for (const num of array) {
+    const potentialMatch = targetSum - num;
+    if (potentialMatch in nums) {
+      return [potentialMatch, num];
+   } else {
+    nums[num] = true;
+   }
   }
-  return[];
+  return [];
 }
-
-
-
-
-
-
 
 
 
