@@ -1,14 +1,36 @@
+// function isValidSubseq (array, sequence) {
+//     let mainPointer = 0;
+//     let seqPointer = 0;
+//     while (mainPointer < array.length) {
+//         if (array[mainPointer] === sequence[seqPointer]) {
+//             seqPointer++;
+//         }
+//         mainPointer++;
+//     }
+//     return seqPointer === sequence.length;
+// }
+
+
+
+
+
 function isValidSubseq (array, sequence) {
-    let mainPointer = 0;
-    let seqPointer = 0;
+    mainPointer = 0;
+    seqPointer = 0;
     while (mainPointer < array.length) {
         if (array[mainPointer] === sequence[seqPointer]) {
             seqPointer++;
         }
-        mainPointer++;
+        mainPointer++
     }
     return seqPointer === sequence.length;
 }
+
+
+
+
+
+
 
 
 
