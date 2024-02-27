@@ -15,16 +15,27 @@
 //if any two numbers in the input array sum up to the target sum, the function should return them in any order.
 //if no two numbers sum up to target sum, then return an empty array.
 
-function twoNumberSum(array, targetsum) {
-    for (let i = 0; i < array.length; i++) {
-        for (let j = i + 1; j < array.length; j++) {
-            if (array[i] + array[j] === targetsum) {
-                return [array[i], array[j]]
-            }
-        }
-    }
-    return [];
-}
+// function twoNumberSum(array, targetsum) {
+//     for (let i = 0; i < array.length; i++) {
+//         for (let j = i + 1; j < array.length; j++) {
+//             if (array[i] + array[j] === targetsum) {
+//                 return [array[i], array[j]]
+//             }
+//         }
+//     }
+//     return [];
+// }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
